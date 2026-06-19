@@ -1,102 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DriveSpace | Cars</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Cars - DriveSpace</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- Navigation -->
-<header>
-    <nav>
-        <div class="logo">
-            <img src="images/logo.png" alt="DriveSpace Logo">
-        </div>
+<nav class="navbar">
+  <h2>DriveSpace</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cars.html">Cars</a></li>
+    <li><a href="offers.html">Offers</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Login</a></li>
+  </ul>
+</nav>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cars.html">Cars</a></li>
-            <li><a href="#">Offers</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-    </nav>
-</header>
+<!-- FILTER -->
+<div class="filters">
+  <button>Selected Cars</button>
+  <button>Brand</button>
+  <button>Price</button>
+</div>
 
-<!-- Cars -->
-<section class="cars">
+<!-- CAR GRID -->
+<section class="grid">
+  
+  <div class="card">
+    IMAGE
+    <p>Description</p>
+    <button>View</button>
+    <button>Buy</button>
+  </div>
 
-    <h1>Our Vehicles</h1>
+  <div class="card">
+    IMAGE
+    <p>Description</p>
+    <button>View</button>
+    <button>Buy</button>
+  </div>
 
-    <div class="filters">
-        <input type="text" placeholder="Search for a car...">
+  <div class="card">
+    IMAGE
+    <p>Description</p>
+    <button>View</button>
+    <button>Buy</button>
+  </div>
 
-        <select>
-            <option>Brand</option>
-            <option>BMW</option>
-            <option>Audi</option>
-            <option>Mercedes</option>
-            <option>Ford</option>
-        </select>
-
-        <select>
-            <option>Price</option>
-            <option>Under $20,000</option>
-            <option>$20,000 - $40,000</option>
-            <option>$40,000+</option>
-        </select>
-    </div>
-
-    <div class="car-grid">
-
-        <div class="card">
-            <img src="images/car1.jpg" alt="BMW">
-            <h3>BMW M4</h3>
-            <p>High-performance coupe with premium features.</p>
-            <div class="buttons">
-                <a href="#" class="view-btn">View</a>
-                <a href="#" class="buy-btn">Buy</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="images/car2.jpg" alt="Audi">
-            <h3>Audi RS5</h3>
-            <p>Luxury sports car with quattro AWD.</p>
-            <div class="buttons">
-                <a href="#" class="view-btn">View</a>
-                <a href="#" class="buy-btn">Buy</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="images/car3.jpg" alt="Mercedes">
-            <h3>Mercedes AMG</h3>
-            <p>Powerful engine and elegant interior.</p>
-            <div class="buttons">
-                <a href="#" class="view-btn">View</a>
-                <a href="#" class="buy-btn">Buy</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="images/car4.jpg" alt="Ford">
-            <h3>Ford Mustang</h3>
-            <p>Iconic muscle car with modern technology.</p>
-            <div class="buttons">
-                <a href="#" class="view-btn">View</a>
-                <a href="#" class="buy-btn">Buy</a>
-            </div>
-        </div>
-
-    </div>
+  <div class="card">
+    IMAGE
+    <p>Description</p>
+    <button>View</button>
+    <button>Buy</button>
+  </div>
 
 </section>
 
-<!-- Your Footer Here -->
+<footer class="footer">FOOTER</footer>
 
 </body>
 </html>
