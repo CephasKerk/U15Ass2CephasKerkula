@@ -1,1 +1,99 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* NAV */
+.navbar {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+}
+
+.hero-box {
+  width: 200px;
+  height: 150px;
+  border: 2px solid black;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+/* FILTERS */
+.filters {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+/* BOTTOM */
+.bottom {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  border: 2px solid black;
+  padding: 20px;
+  flex: 1;
+}
+
+/* OFFERS */
+.offer-container {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+
+.offer-box {
+  width: 200px;
+  height: 150px;
+  background: black;
+}
+
+.offer-text {
+  width: 200px;
+  height: 200px;
+  background: black;
+  color: white;
+}
+
+/* FOOTER */
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
