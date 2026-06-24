@@ -2,65 +2,114 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Cars - DriveSpace</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cars | DriveSpace</title>
 
+<link rel="stylesheet" href="cars.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
 <body>
 
+<!-- Navigation -->
 <nav class="navbar">
-  <h2>DriveSpace</h2>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="cars.html">Cars</a></li>
-    <li><a href="offers.html">Offers</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><a href="#">Login</a></li>
-  </ul>
+
+    <div class="logo">DriveSpace</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html" class="active">Cars</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
 </nav>
 
-<!-- FILTER -->
+<!-- Heading -->
+
+<section class="cars">
+
+<h1>Our Cars</h1>
+
+<p>Browse our latest collection of premium vehicles.</p>
+
+<!-- Filters -->
+
 <div class="filters">
-  <button>Selected Cars</button>
-  <button>Brand</button>
-  <button>Price</button>
+
+<button>All Cars</button>
+<button>Brand</button>
+<button>Price</button>
+
 </div>
 
-<!-- CAR GRID -->
-<section class="grid">
-  
-  <div class="card">
-    IMAGE
-    <p>Description</p>
-    <button>View</button>
-    <button>Buy</button>
-  </div>
+<!-- Car Grid -->
 
-  <div class="card">
-    IMAGE
-    <p>Description</p>
-    <button>View</button>
-    <button>Buy</button>
-  </div>
+<div class="car-grid">
 
-  <div class="card">
-    IMAGE
-    <p>Description</p>
-    <button>View</button>
-    <button>Buy</button>
-  </div>
+<div class="car-card">
+<img src="images/bmw.jpg" alt="BMW M4">
 
-  <div class="card">
-    IMAGE
-    <p>Description</p>
-    <button>View</button>
-    <button>Buy</button>
-  </div>
+<div class="car-info">
+<h2>BMW M4</h2>
+<p>Luxury sports coupe with exceptional performance.</p>
+<h3>R1 250 000</h3>
+
+<a href="#" class="btn">View</a>
+<a href="#" class="btn buy">Buy</a>
+</div>
+</div>
+
+<div class="car-card">
+<img src="images/audi.jpg" alt="Audi RS5">
+
+<div class="car-info">
+<h2>Audi RS5</h2>
+<p>Powerful German engineering with premium comfort.</p>
+<h3>R1 180 000</h3>
+
+<a href="#" class="btn">View</a>
+<a href="#" class="btn buy">Buy</a>
+</div>
+</div>
+
+<div class="car-card">
+<img src="images/mercedes.jpg" alt="Mercedes C63">
+
+<div class="car-info">
+<h2>Mercedes C63</h2>
+<p>Elegant design with outstanding performance.</p>
+<h3>R1 350 000</h3>
+
+<a href="#" class="btn">View</a>
+<a href="#" class="btn buy">Buy</a>
+</div>
+</div>
+
+<div class="car-card">
+<img src="images/mustang.jpg" alt="Ford Mustang">
+
+<div class="car-info">
+<h2>Ford Mustang GT</h2>
+<p>Classic American muscle with modern technology.</p>
+<h3>R950 000</h3>
+
+<a href="#" class="btn">View</a>
+<a href="#" class="btn buy">Buy</a>
+</div>
+</div>
+
+</div>
 
 </section>
 
-<footer class="footer">FOOTER</footer>
+<footer>
+
+<p>&copy; 2025 DriveSpace. All Rights Reserved.</p>
+
+</footer>
 
 </body>
 </html>
