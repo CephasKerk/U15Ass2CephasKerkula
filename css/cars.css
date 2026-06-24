@@ -1,0 +1,187 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#FFFFFF;
+    color:#0D0D0D;
+}
+
+/* ======================
+   NAVIGATION
+====================== */
+
+.navbar{
+    background:#0D0D0D;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#00AEEF;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#FFFFFF;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    color:#00AEEF;
+}
+
+/* ======================
+   PAGE TITLE
+====================== */
+
+.cars{
+    width:90%;
+    margin:60px auto;
+}
+
+.cars h1{
+    text-align:center;
+    font-size:48px;
+    color:#0D0D0D;
+}
+
+.cars p{
+    text-align:center;
+    color:#555;
+    margin:15px 0 40px;
+    font-size:18px;
+}
+
+/* ======================
+   CAR GRID
+====================== */
+
+.car-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* ======================
+   CAR CARD
+====================== */
+
+.car-card{
+    background:#FFFFFF;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.car-card:hover{
+    transform:translateY(-8px);
+}
+
+.car-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.car-info{
+    padding:20px;
+}
+
+.car-info h2{
+    color:#0D0D0D;
+    margin-bottom:10px;
+}
+
+.car-info p{
+    color:#666;
+    margin-bottom:15px;
+    text-align:left;
+}
+
+.price{
+    font-size:22px;
+    color:#00AEEF;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+/* ======================
+   BUTTON
+====================== */
+
+.btn{
+    display:inline-block;
+    background:#00AEEF;
+    color:#FFFFFF;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#008CC4;
+}
+
+/* ======================
+   FOOTER
+====================== */
+
+footer{
+    background:#0D0D0D;
+    color:#FFFFFF;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+    border-top:4px solid #00AEEF;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.nav-links li{
+    margin:10px;
+}
+
+.cars h1{
+    font-size:36px;
+}
+
+}
