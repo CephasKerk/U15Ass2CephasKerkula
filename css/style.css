@@ -1,191 +1,278 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* ===========================
+   GENERAL
+=========================== */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
     background:#FFFFFF;
     color:#0D0D0D;
+    line-height:1.6;
 }
 
-/* Navigation */
+/* ===========================
+   HEADER
+=========================== */
 
 header{
     background:#0D0D0D;
-}
-
-.navbar{
-    width:90%;
-    margin:auto;
+    color:white;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 0;
+    padding:20px 50px;
 }
 
-.logo{
-    font-size:30px;
-    font-weight:700;
-    color:#00AEEF;
+.logo h2{
+    color:white;
 }
 
-.nav-links{
-    display:flex;
-    list-style:none;
-}
-
-.nav-links li{
-    margin-left:30px;
-}
-
-.nav-links a{
+nav a{
+    color:white;
     text-decoration:none;
-    color:#FFFFFF;
+    margin-left:25px;
     font-size:18px;
-    font-weight:500;
-    transition:.3s;
 }
 
-.nav-links a:hover,
-.nav-links .active{
+nav a:hover{
     color:#00AEEF;
 }
 
-/* Hero Section */
+/* ===========================
+   HERO SECTION
+=========================== */
 
 .hero{
     display:flex;
-    align-items:center;
     justify-content:space-between;
-    width:90%;
-    margin:70px auto;
+    align-items:center;
+    padding:50px;
     gap:50px;
 }
 
 .hero-image img{
-    width:100%;
-    max-width:550px;
-    border-radius:15px;
-    border:4px solid #00AEEF;
+    width:500px;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.hero-text{
+    width:45%;
 }
 
 .hero-text h1{
-    font-size:55px;
-    color:#0D0D0D;
+    font-size:48px;
     margin-bottom:20px;
 }
 
 .hero-text p{
+    margin-bottom:25px;
     font-size:18px;
-    color:#555;
-    margin-bottom:30px;
-    line-height:1.8;
 }
 
-/* Button */
+/* ===========================
+   BUTTONS
+=========================== */
 
-.btn{
-    display:inline-block;
+button{
     background:#00AEEF;
-    color:#FFFFFF;
-    padding:14px 35px;
-    text-decoration:none;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    font-size:16px;
     border-radius:5px;
-    font-size:18px;
-    font-weight:600;
-    transition:.3s;
+    cursor:pointer;
 }
 
-.btn:hover{
-    background:#008CC4;
+button:hover{
+    background:#008DC5;
 }
 
-/* Featured Cars */
+/* ===========================
+   FEATURED CARS
+=========================== */
 
 .featured{
-    width:90%;
-    margin:80px auto;
+    padding:40px;
 }
 
 .featured h2{
-    text-align:center;
-    color:#0D0D0D;
-    font-size:36px;
-    margin-bottom:40px;
+    margin-bottom:25px;
 }
 
-.car-container{
+.car-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
 }
 
 .car-card{
-    background:#FFFFFF;
+    background:white;
     border:2px solid #00AEEF;
-    border-radius:15px;
+    border-radius:10px;
     overflow:hidden;
     text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.car-card:hover{
+    transform:scale(1.03);
 }
 
 .car-card img{
     width:100%;
-    height:220px;
+    height:180px;
     object-fit:cover;
 }
 
 .car-card h3{
-    margin:15px 0;
-    color:#0D0D0D;
+    margin-top:15px;
 }
 
 .car-card p{
-    color:#555;
+    margin:10px 0 20px;
+    color:#00AEEF;
+    font-weight:bold;
+}
+
+/* ===========================
+   HOME INFO
+=========================== */
+
+.home-info{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:40px;
+}
+
+.info-box{
+    width:45%;
+    border:2px solid #00AEEF;
+    border-radius:10px;
+    padding:25px;
+    text-align:center;
+    background:white;
+}
+
+.info-box h2{
+    margin-bottom:15px;
+}
+
+.info-box p{
     margin-bottom:20px;
 }
 
-/* Footer */
+/* ===========================
+   GENERAL PAGE CONTAINER
+=========================== */
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* ===========================
+   TABLES
+=========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#00AEEF;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    border:1px solid #ccc;
+    padding:15px;
+    text-align:center;
+}
+
+/* ===========================
+   FORMS
+=========================== */
+
+form{
+    width:500px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    resize:none;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
 
 footer{
     background:#0D0D0D;
-    color:#FFFFFF;
+    color:white;
     text-align:center;
     padding:20px;
-    margin-top:80px;
-    border-top:4px solid #00AEEF;
+    margin-top:40px;
 }
 
-/* Responsive */
+/* ===========================
+   RESPONSIVE
+=========================== */
 
-@media(max-width:768px){
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:20px;
+}
 
 .hero{
     flex-direction:column;
+}
+
+.hero-image img{
+    width:100%;
+    height:auto;
+}
+
+.hero-text{
+    width:100%;
     text-align:center;
 }
 
-.navbar{
+.car-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.home-info{
     flex-direction:column;
 }
 
-.nav-links{
-    margin-top:20px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.nav-links li{
-    margin:10px;
-}
-
-.hero-text h1{
-    font-size:40px;
+.info-box{
+    width:100%;
 }
 
 }
